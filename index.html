@@ -35,19 +35,19 @@
 </head>
 <body>
   <div class="container">
-    <svg class="success-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M9 11l3 3L22 4"></path>
-        <path d="M21 12a9 9 0 1 1-8-8"></path>
+    <svg class="loading-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="25" cy="25" r="20" stroke-dasharray="31.415, 31.415" stroke-dashoffset="0">
+          <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" keyTimes="0;1" values="0 25 25;360 25 25"></animateTransform>
+      </circle>
     </svg>
-    <h1>Success</h1>
-    <p>Thank you for submitting the form</p>
+    <h1>Loading...</h1>
   </div>
 <script>
   setTimeout(() => {
     window.location.href = 'https://pd-solution-consulting.pushbot.com/form/martinsform'
       + '?ref-success=https://martindstone.github.io/cnb-redir/success.html'
       + '&ref-error=https://martindstone.github.io/cnb-redir/failure.html';
-  }, 3000);
+  }, 10);
 </script>
 </body>
 </html>
